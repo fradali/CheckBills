@@ -10,6 +10,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,6 +23,8 @@ import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.daimajia.slider.library.Tricks.ViewPagerEx;
 
 import java.util.HashMap;
+
+import butterknife.InjectView;
 
 
 public class MainActivity extends ActionBarActivity implements BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener{
@@ -39,7 +42,7 @@ public class MainActivity extends ActionBarActivity implements BaseSliderView.On
 
         mDemoSlider = (SliderLayout)findViewById(R.id.slider);
 
-        HashMap<String,Integer> file_maps = new HashMap<String, Integer>();
+        HashMap<String, Integer> file_maps = new HashMap<String, Integer>();
         file_maps.put("PUB1",R.drawable.pub1);
         file_maps.put("PUB2",R.drawable.pub2);
         file_maps.put("PUB3",R.drawable.pub3);
@@ -66,17 +69,15 @@ public class MainActivity extends ActionBarActivity implements BaseSliderView.On
         mDemoSlider.setCustomAnimation(new DescriptionAnimation());
         mDemoSlider.setDuration(1000);
         mDemoSlider.addOnPageChangeListener(this);
-       /* ListView l = (ListView)findViewById(R.id.transformers);
-       l.setAdapter(new TransformerAdapter(this));
-        l.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                mDemoSlider.setPresetTransformer(((TextView) view).getText().toString());
-                Toast.makeText(MainActivity.this, ((TextView) view).getText().toString(), Toast.LENGTH_SHORT).show();
-            }
-        });*/
 
-
+       Button button = (Button) findViewById(R.id.btn_bills);
+       button.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Intent intent = new Intent(view.getContext(),BillsActivity.class);
+               startActivityForResult(intent,0);
+           }
+       });
     }
 
     @Override

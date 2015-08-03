@@ -24,6 +24,11 @@
             android:name="com.sourcey.materialloginexample.item"
             android:label="@string/title_activity_item" >
         </activity>
+        <activity
+            android:name=".BillsActivity"
+            android:label="@string/title_activity_bills"
+            android:theme="@style/AppTheme.Dark">
+        </activity>
     </application>
 
 </manifest>
