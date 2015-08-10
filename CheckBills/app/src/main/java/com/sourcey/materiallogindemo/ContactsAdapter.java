@@ -52,7 +52,7 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.VH> {
     }
 
     // Provide a reference to the views for each contact item
-    public final static class VH extends RecyclerView.ViewHolder {
+    public class VH extends RecyclerView.ViewHolder {
 
         final View rootView;
         final ImageView ivProfile;
@@ -75,7 +75,7 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.VH> {
                         // Fire an intent when a contact is selected
                         // Pass contact object in the bundle and populate details activity.
                         Intent intent = new Intent(v.getContext(),DetailsActivity.class);
-                        context.startActivity(intent);
+                        mContext.startActivity(intent);
                        // intent.putExtra("Contact selected",contact);
 
 
