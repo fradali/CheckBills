@@ -6,6 +6,7 @@ package com.sourcey.materiallogindemo;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -75,10 +76,11 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.VH> {
                         // Fire an intent when a contact is selected
                         // Pass contact object in the bundle and populate details activity.
                         Intent intent = new Intent(v.getContext(),DetailsActivity.class);
-                        mContext.startActivity(intent);
-                       // intent.putExtra("Contact selected",contact);
 
-
+                        Bundle mBundle = new Bundle();
+                        mBundle.putSerializable("Contact",contact);
+                        intent.putExtras(mBundle);
+                        context.startActivity(intent);
                     }
                 }
             });

@@ -44,7 +44,8 @@ public class DetailsActivity extends AppCompatActivity {
 
 
         // Extract FAB
-      FloatingActionButton  fab = (FloatingActionButton) findViewById(R.id.fab);
+          FloatingActionButton fab;
+          fab = (FloatingActionButton) findViewById(R.id.fab);
         // Dial contact's number.
         // This shows the dialer with the number, allowing you to explicitly initiate the call.
         fab.setOnClickListener(new View.OnClickListener() {

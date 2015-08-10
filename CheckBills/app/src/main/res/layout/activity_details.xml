@@ -53,6 +53,7 @@
                 android:layout_gravity="bottom|right"
                 android:layout_margin="16dp"
                 android:elevation="@dimen/fab_elevation"
+                fab:fab_shadow="true"
                 android:src="@drawable/ic_call" />
         </FrameLayout>
 
