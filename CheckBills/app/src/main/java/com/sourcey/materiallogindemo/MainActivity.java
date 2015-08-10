@@ -71,6 +71,7 @@ public class MainActivity extends ActionBarActivity implements BaseSliderView.On
         mDemoSlider.addOnPageChangeListener(this);
 
        Button button = (Button) findViewById(R.id.btn_bills);
+        Button button2 = (Button) findViewById(R.id.btn_numbers);
        button.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
@@ -78,6 +79,15 @@ public class MainActivity extends ActionBarActivity implements BaseSliderView.On
                startActivityForResult(intent,0);
            }
        });
+
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(),ContactsActivity.class);
+                startActivityForResult(intent,0);
+            }
+        });
     }
 
     @Override

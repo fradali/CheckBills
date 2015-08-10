@@ -27,8 +27,20 @@
         <activity
             android:name=".BillsActivity"
             android:label="@string/title_activity_bills"
+            android:theme="@style/AppTheme.Dark" >
+        </activity>
+        <activity
+            android:name=".ContactsActivity"
+            android:label="@string/title_activity_phones"
             android:theme="@style/AppTheme.Dark">
         </activity>
+
+        <activity
+            android:name=".DetailsActivity"
+            android:label="@string/title_activity_phonesdt"
+            android:theme="@style/AppTheme.Dark">
+        </activity>
+
     </application>
 
 </manifest>

@@ -12,4 +12,7 @@
         <item>TAB 2</item>
         <item>TAB 3</item>
     </string-array>
+    <string name="title_activity_phones">Phones</string>
+    <string name="title_activity_phonesdt">Details Phones</string>
+
 </resources>
