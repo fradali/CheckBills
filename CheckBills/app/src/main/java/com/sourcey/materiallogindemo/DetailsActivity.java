@@ -35,7 +35,6 @@ public class DetailsActivity extends AppCompatActivity {
 
         // Extract contact from bundle
         mContact = (Contact)getIntent().getExtras().getSerializable(EXTRA_CONTACT);
-
         // Fill views with data
         Picasso.with(DetailsActivity.this).load(mContact.getThumbnailDrawable()).into(ivProfile);
         tvName.setText(mContact.getName());

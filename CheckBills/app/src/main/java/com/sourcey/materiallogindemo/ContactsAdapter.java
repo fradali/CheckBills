@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -80,7 +81,7 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.VH> {
                         Bundle mBundle = new Bundle();
                         mBundle.putSerializable("Contact",contact);
                         intent.putExtras(mBundle);
-                        context.startActivity(intent);
+                        mContext.startActivity(intent);
                     }
                 }
             });
