@@ -11,8 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.oguzdev.circularfloatingactionmenu.library.FloatingActionButton;
+import com.melnykov.fab.FloatingActionButton;
 import com.squareup.picasso.Picasso;
 
 public class DetailsActivity extends AppCompatActivity {

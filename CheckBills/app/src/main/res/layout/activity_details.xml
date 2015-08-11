@@ -7,7 +7,10 @@
         android:id="@+id/ivProfile"
         android:scaleType="centerCrop"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/contact_detail_image_height" />
+        android:layout_height="@dimen/contact_detail_image_height"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <RelativeLayout
         android:id="@+id/rlInfo"
@@ -39,6 +42,7 @@
             android:textColor="@android:color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+
         <FrameLayout
             xmlns:fab="http://schemas.android.com/apk/res-auto"
             android:layout_width="wrap_content"
@@ -49,7 +53,7 @@
             <com.melnykov.fab.FloatingActionButton
                 android:id="@+id/fab"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="bottom|right"
                 android:layout_margin="16dp"
                 android:elevation="@dimen/fab_elevation"
