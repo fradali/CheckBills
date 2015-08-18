@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sourcey.materiallogindemo" >
-
-     <!-- Internet Permission -->
-     <uses-permission android:name="android.permission.INTERNET" />
+     
+    <!-- Internet Permission -->
+     
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -35,15 +36,18 @@
         <activity
             android:name=".ContactsActivity"
             android:label="@string/title_activity_phones"
-            android:theme="@style/AppTheme.Dark">
+            android:theme="@style/AppTheme.Dark" >
         </activity>
-
         <activity
             android:name=".DetailsActivity"
             android:label="@string/title_activity_phonesdt"
+            android:theme="@style/AppTheme.Dark" >
+        </activity>
+        <activity
+            android:name=".PaymentActivity"
+            android:label="@string/title_activity_payment"
             android:theme="@style/AppTheme.Dark">
         </activity>
-
     </application>
 
 </manifest>
