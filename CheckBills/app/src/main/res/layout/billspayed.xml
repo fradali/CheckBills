@@ -6,14 +6,8 @@
 
 
     <ListView
-        android:layout_width="match_parent"
-        android:layout_height="133dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:id="@+id/listView" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
-        android:id="@+id/textView" />
 </LinearLayout>

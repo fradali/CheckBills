@@ -74,7 +74,6 @@ public class BillsPayed extends Fragment {
 
                 billsList.add(bill);
             }
-
             ListAdapter adapter = new SimpleAdapter(
                    getActivity(), billsList, R.layout.list_item,
                     new String[]{TAG_ID,TAG_NAME,TAG_DATEPY},
