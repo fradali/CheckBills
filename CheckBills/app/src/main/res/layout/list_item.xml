@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -10,23 +10,30 @@
 
     <TextView
         android:id="@+id/id"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="2dip"
         android:text="Id Bill : "
         android:textColor="@color/background_material_dark"
         android:paddingTop="6dip"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_gravity="left"
+        android:drawableLeft="@drawable/billpayed"
+       />
 
 
     <TextView
         android:id="@+id/name"
         android:textColor="@color/background_material_dark"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="2dip"
         android:text="Bill's name : "
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:gravity="left"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignTop="@+id/id"
+        android:layout_centerHorizontal="true" />
 
 
     <TextView
@@ -36,6 +43,10 @@
         android:gravity="left"
         android:text="Paid  : "
         android:textColor="@color/background_material_dark"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/name"
+        android:layout_toEndOf="@+id/name" />
 
-</LinearLayout>
+</RelativeLayout>
