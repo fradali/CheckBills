@@ -3,7 +3,6 @@ package com.sourcey.materiallogindemo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -49,6 +48,7 @@ public class BillsPayed extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.billspayed, container, false);
         list = (ListView) rootView.findViewById(R.id.listView);
+       // list.setBackgroundColor (getResources().getColor(R.color.colorPrimaryLight));
         billsList = new ArrayList<HashMap<String,String>>();
         getData();
         return rootView;
@@ -134,6 +134,9 @@ public class BillsPayed extends Fragment {
         GetDataJSON g = new GetDataJSON();
         g.execute();
     }
+
+
+
 
 
     @Override

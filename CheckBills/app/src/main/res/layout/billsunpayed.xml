@@ -2,4 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
+
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listView2"
+        android:divider="#B3E5FC"
+        android:dividerHeight="10dp"/>
+
 </LinearLayout>

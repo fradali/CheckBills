@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/id"
+        android:id="@+id/id2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:paddingBottom="2dip"
@@ -20,7 +20,7 @@
 
 
     <TextView
-        android:id="@+id/name"
+        android:id="@+id/name2"
         android:textColor="@color/background_material_dark"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -28,13 +28,21 @@
         android:text="Bill's name : "
         android:textStyle="bold"/>
 
-
     <TextView
-        android:id="@+id/datepayment"
+        android:id="@+id/price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="left"
-        android:text="Paid  : "
+        android:text="Price  : "
+        android:textColor="@color/background_material_dark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/datelimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Must be Paid before : "
         android:textColor="@color/background_material_dark"
         android:textStyle="bold" />
 
