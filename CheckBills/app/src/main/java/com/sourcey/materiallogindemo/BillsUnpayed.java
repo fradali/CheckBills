@@ -1,5 +1,6 @@
 package com.sourcey.materiallogindemo;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -7,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -53,6 +55,24 @@ public class BillsUnpayed extends Fragment {
         // list.setBackgroundColor (getResources().getColor(R.color.colorPrimaryLight));
         billsList = new ArrayList<HashMap<String,String>>();
         getData();
+
+
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1,
+                                    int position, long arg3) {
+                // TODO Auto-generated method stub
+
+                Intent intent = new Intent(getActivity(),PaymentActivity.class);
+                 //based on item add info to intent
+                startActivity(intent);
+
+
+            }
+        });
+
+
         return rootView;
     }
 
