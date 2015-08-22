@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.Toast;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -51,6 +52,8 @@ public class BillsPayed extends Fragment {
        // list.setBackgroundColor (getResources().getColor(R.color.colorPrimaryLight));
         billsList = new ArrayList<HashMap<String,String>>();
         getData();
+        Toast.makeText(getActivity(), "The date shown < bills payed > is the date of payment of your old bills",
+                Toast.LENGTH_LONG).show();
         return rootView;
     }
 
